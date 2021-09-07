@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">animacionExample</string>
+    <string name="textoAnimado1">Este es un texto animado1</string>
+    <string name="textoAnimado2">Este es un texto animado2</string>
+    <string name="textoAnimado3">Este es un texto animado3</string>
+    <string name="lblAnimar1">Animacion1</string>
+    <string name="lblAnimar2">Animacion2</string>
+    <string name="lblAnimar3">Animacion3</string>
+    <string name="lblAnimar4">Animacion4</string>
+    <string name="lblAnimar5">Animacion5</string>
+</resources>

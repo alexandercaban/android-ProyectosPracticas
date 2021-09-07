@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.felipe.theadclock.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="12"
+        android:background="#000000">
+
+
+        <TextView
+            android:text="Reloj"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-thin"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="11">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/txt_military_hour"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:hint="Hora"
+                android:textColorHint="#c0c0c0"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:text=":"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textView2"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#ffffff"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/txt_minutes"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:hint="Minutos"
+                android:textColorHint="#c0c0c0"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:text=":"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textView3"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#ffffff"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/txt_seconds"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:hint="Segundos"
+                android:textColorHint="#c0c0c0"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Iniciar"
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:id="@+id/btn_start_clock"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:onClick="startClock"
+            android:background="#ffffff"
+            android:textColor="#000000"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/lbl_result_clock"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-thin"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/lbl_result_military_clock"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-thin" />
+
+    </LinearLayout>
+</RelativeLayout>

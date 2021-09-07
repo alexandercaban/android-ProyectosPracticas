@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">JsonDemo</string>
+    <string name="lblUsuario">Usuario</string>
+    <string name="lblClave">Clave</string>
+    <string name="lblTipoEstudiante">TipoEstudiante</string>
+    <string name="lblPregrado">pregrado</string>
+    <string name="lblPostgrado">postgrado</string>
+</resources>

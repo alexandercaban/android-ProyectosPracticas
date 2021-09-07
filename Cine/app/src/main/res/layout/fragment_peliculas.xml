@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:orientation="vertical"
+    tools:context="com.example.alexcaban.cine.Peliculas">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REGISTRAR PELICULAS"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"/>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/EtTituloPeliculaWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/EtTituloPelicula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Titulo"
+                android:layout_gravity="center_horizontal" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/EtResumenPeliculaWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/EtResumenPelicula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Resumen"
+                android:layout_gravity="center_horizontal" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/EtDuracionPeliculaWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/EtDuracionPelicula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Duraciòn en Minutos"
+                android:layout_gravity="center_horizontal"
+                android:inputType="number"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/EtAnioEstrenoWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/EtAnioEstreno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Año de Estreno"
+                android:layout_gravity="center_horizontal"
+                android:inputType="number"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="18dp"
+                    android:text="Categorias:"
+                    />
+                <Spinner
+                    android:id="@+id/SpnCategorias"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"></Spinner>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:text="Actores:"/>
+                <Spinner
+                    android:id="@+id/SpnActores"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"></Spinner>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+
+                <!--<Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GUARDAR EN SQL"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:onClick="crearPeliculas"/>-->
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GUARDAR EN ARCHIVO"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:onClick="guardarArchivo"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="leer datos"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:onClick="leerdatos"/>
+                </LinearLayout>
+            <!--<Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REGISTRAR"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:onClick="crearPeliculas"/>-->
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/lvListadoPeliculas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>
+
+

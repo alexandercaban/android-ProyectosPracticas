@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SqliteExample</string>
+    <string name="lblNombre">Nombre</string>
+    <string name="lblApellido">Apellido</string>
+    <string name="lblTipoUsuario">TipoUsuario</string>
+    <string name="lblCedula">Cédula</string>
+    <string name="lblCrear">Crear</string>
+    <string name="lblModificar">Modificar</string>
+    <string name="lblLimpiar">Limpiar</string>
+    <string name="lblEliminar">Eliminar</string>
+
+</resources>

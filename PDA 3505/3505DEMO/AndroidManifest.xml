@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pda3505"
+    android:versionCode="1"
+    android:versionName="1.6.3.2" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:name="android.serialport.api.MyApp"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" 
+        android:theme="@android:style/Theme.DeviceDefault.Light" >
+        <activity android:name="com.pda3505.activity.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.pda3505.activity.RFIDDemo" />
+        <activity android:name="com.pda3505.activity.PowerSwitch" />
+        <activity android:name="com.pda3505.activity.PSAMDemo" />
+        <activity android:name="com.pda3505.activity.PrintDemo" />
+        <activity android:name="com.pda3505.activity.PrintCmdActivity" />
+        <activity android:name="com.pda3505.activity.CameraDemo" />
+        <activity android:name="com.pda3505.activity.QrCodeActivity" />
+        <activity android:name="com.pda3505.activity.CaptureActivity" />
+        <activity android:name="com.pda3505.activity.SerialPortActivity" />
+        <activity android:name="com.pda3505.activity.SerialPortSettingActivity" />
+        <activity android:name="android.serialport.api.SerialPortPreferences" />
+
+        <!-- 按键广播 -->
+        <receiver
+            android:name="com.pda3505.Service.RemoteControlReceiver"
+            android:permission="com.zkc.keycode" >
+            <intent-filter>
+                <intent-filter android:priority="1000" />
+
+                <action android:name="com.zkc.keycode" />
+            </intent-filter>
+        </receiver>
+        <!-- 广播接收 -->
+        <receiver android:name="com.pda3505.Service.StartReceiver" >
+            <intent-filter android:priority="996" />
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+        <!-- 扫描服务 -->
+       <service android:name="com.pda3505.Service.CaptureService" >
+            <intent-filter>
+                <action android:name="com.zkc.Service.CaptureService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.pda3505.barvodeScan.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pda3505.barvodeScan.ActivityBarcodeSetting"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pda3505.barvodeScan.ActivityQrcodeSetting"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pda3505.barvodeScan.DialogEncodingActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pda3505.activity.FingerActivity"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.INJECT_EVENT" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" >
+    </uses-permission>
+
+</manifest>

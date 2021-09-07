@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "854024429625",
+    "firebase_url": "https://proyectodemo-65e12.firebaseio.com",
+    "project_id": "proyectodemo-65e12",
+    "storage_bucket": "proyectodemo-65e12.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854024429625:android:664fcd3679e12f50",
+        "android_client_info": {
+          "package_name": "co.edu.univalle.firebasedemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854024429625-3h85am3dk7g403qgmes80e9rs96a9vuc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArZBChca6PHG_E-xuWT56yF4CQfaRpdOY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854024429625-3h85am3dk7g403qgmes80e9rs96a9vuc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TrikiSocket</string>
+    <string name="title_activity_cliente">Cliente</string>
+</resources>

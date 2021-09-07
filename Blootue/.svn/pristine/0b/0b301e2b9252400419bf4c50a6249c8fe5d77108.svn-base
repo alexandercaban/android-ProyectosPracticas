@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BluetoothPrinterDemo</string>
+    <string name="btn_only_text">Sólo texto</string>
+    <string name="btn_imagen">Imagen</string>
+    <string name="btn_qr">Código QR</string>
+    <string name="btn_bar_code">Código de barras</string>
+    <string name="btn_styles">Varios estilos</string>
+    <string name="hint_mac_printer">Dirección física impresora</string>
+    <string name="conectar">Conectar impresora</string>
+    <string name="desconectar">Desconectar impresora</string>
+</resources>

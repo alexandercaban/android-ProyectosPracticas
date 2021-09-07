@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FireBaseDemo</string>
+    <string name="lblUsuario">Usuario</string>
+    <string name="lblClave">Clave</string>
+    <string name="btnIngresar">Ingresar</string>
+    <string name="facebook_app_id">662401884230947</string> <string name="fb_login_protocol_scheme">fb662401884230947</string>Copiar código
+
+</resources>

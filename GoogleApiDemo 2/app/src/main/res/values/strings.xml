@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GoogleApiDemo</string>
+    <string name="lblSatelite">Satelite</string>
+    <string name="lblHibrido">Hibrido</string>
+    <string name="lblTerreno">Terreno</string>
+    <string name="lblNormal">Normal</string>
+    <string name="lblAnimar">Animar</string>
+    <string name="lblVerRuta">Ver Ruta</string>
+    <string name="lblCalle">Vista de Calle</string>
+    <string name="lblDescripcion">Descripcion</string>
+    <string name="googlemapskey">AIzaSyB3L_y-afL_ImmWCbsMYfCgigmp3x_-xgw</string>
+</resources>

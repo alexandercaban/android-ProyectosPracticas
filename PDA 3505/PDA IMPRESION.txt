@@ -1,0 +1,9 @@
+Activity:
+Printer.printPDA(this);
+
+
+
+HANDLER: 
+if(Build.MODEL.equals("PDA_3505")){
+                    Printer.printerClass.printText(params[0].toString());
+                }else {
